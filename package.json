@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.38.1",
+    "@types/node": "^20.7.1",
+    "cross-env": "^7.0.3",
+    "mailosaur": "^8.6.1"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:test": "test_env=test npx playwright test",
+    "test:qa": "test_env=qa npx playwright test",
+    "test:prod": "cross-env test_env=prod npx playwright test"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
